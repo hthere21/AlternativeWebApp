@@ -1,0 +1,36 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="container">
+<div class="div1" style="text-align: center;">
+    <app-handtracker (onPrediction)="ratingVid($event)" (onPrediction)="nextPhoto($event)" (onPrediction)="goingToHistory($event)"></app-handtracker>
+    <div [innerHTML]="gesture"></div>
+</div>
+
+<div class="div2" style="text-align: center;">
+    <h2>Rating gesture</h2>
+    <p style="align-items: center;">Closed and Pinching Hands (<span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
+    <p><b>Closed Hands</b> (<span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
+    <p><b>Two Closed Hands</b> (<span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
+    <p><b>Two Pointing Hands</b> (<span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
+    <p><b>Pointing and Closed Hands</b> (<span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span><span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
+</div>
+
+<div class="div3" style="text-align: center;">
+    <h2>Interact gesture</h2>
+    <p> <b>Open Hand</b> - Next Photo</p>
+    <p> <b>Two Hands Pinching</b> - Going To History Page</p>
+</div>
+</div>
+<br>
+<div>
+<h2 style="text-align: center;" *ngIf="!ratingCheck">Use your hand to rate these random photos</h2>
+<h3 style="text-align: center;" *ngIf="ratingCheck">You just rate this photo {{rating}} star. Press submit button to confirm</h3>
+<div style="margin-top: 5px; text-align: center;" *ngIf="ratingCheck">
+<button (click)="onSubmit()">Submit</button>
+</div>
+</div>
+<br>
+<div class="imgCenter">
+    <img [src]=url height="360">
+</div>
+<br>

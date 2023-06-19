@@ -1,0 +1,36 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<div class="header">
+    <h1 style="text-align: center;">Rating History</h1>
+</div>
+
+<div class="history-table">
+    <table  mat-table class="table table-sm table-light table-striped" >
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Picture</th>
+                <th scope="col">Rating</th>
+                <!--TODO: Use *ngIf to hide if hideArtist is true-->
+                <th scope="col" >Time</th>
+                <!--TODO: Use *ngIf to hide if hideAlbum is true-->
+                <th scope="col">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!--TODO: Use *ngFor to loop over tracks-->
+            <tr *ngFor="let all of allArr; ; let i = index;">
+                <!--TODO: Populate with row index (start with 1!)-->
+                <td style="text-align: center;">{{i}}</td>
+                <td><img src={{all.url}} height="150" style="display:block; width:70%; margin-left: auto; margin-right: auto"></td>
+                <!--TODO: display the track's duration-->
+                <td style="text-align: center;">{{all.rating}}</td>
+                <!--TODO: Use *ngIf to hide if hideArtist is true; link to the first artist's endpoint and display the first artist's name-->
+                <td style="text-align: center;" >{{all.date}}</td>
+                <!--TODO: Use *ngIf to hide if hideAlbum is true; link to the album's endpoint and display the album's name-->
+                <td style="text-align: center;">{{all.time}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<br>
