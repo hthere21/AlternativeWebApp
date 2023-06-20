@@ -1,0 +1,18 @@
+.body1 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.small-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+  }
+
+.image1 {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+

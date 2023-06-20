@@ -11,9 +11,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Picture</th>
                 <th scope="col">Rating</th>
-                <!--TODO: Use *ngIf to hide if hideArtist is true-->
                 <th scope="col" >Time</th>
-                <!--TODO: Use *ngIf to hide if hideAlbum is true-->
                 <th scope="col">Date</th>
             </tr>
         </thead>
@@ -26,9 +24,9 @@
                 <!--TODO: display the track's duration-->
                 <td style="text-align: center;">{{all.rating}}</td>
                 <!--TODO: Use *ngIf to hide if hideArtist is true; link to the first artist's endpoint and display the first artist's name-->
-                <td style="text-align: center;" >{{all.date}}</td>
+                <td style="text-align: center;" >{{all.time}}</td>
                 <!--TODO: Use *ngIf to hide if hideAlbum is true; link to the album's endpoint and display the album's name-->
-                <td style="text-align: center;">{{all.time}}</td>
+                <td style="text-align: center;">{{all.date}}</td>
             </tr>
         </tbody>
     </table>

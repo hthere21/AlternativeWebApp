@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 import * as handTrack from 'handtrackjs';
 import { PredictionEvent } from '../prediction-event';
+import { ServiceService } from '../service.service';
 
 @Component({
   selector: 'app-handtracker',
@@ -33,7 +34,8 @@ export class HandtrackerComponent implements OnInit {
     scoreThreshold: 0.6, // confidence threshold for predictions.
   };
 
-  constructor() {
+  constructor(private sharedService: ServiceService) {
+    this.sharedService.handTracker = this;
   }
   
   ngOnInit(): void{

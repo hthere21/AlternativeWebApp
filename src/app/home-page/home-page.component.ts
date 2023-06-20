@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PredictionEvent } from '../prediction-event';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ServiceService } from '../service.service';
+import { HandtrackerComponent } from '../handtracker/handtracker.component';
 
 @Component({
   selector: 'app-home-page',
@@ -15,10 +16,11 @@ export class HomePageComponent implements OnInit {
   pitureUrl: String = "";
   rating: number;
   gesture: string = "";
+  handTrackerService: HandtrackerComponent;
   //url: string = "https://images.unsplash.com/photo-1668943324398-f34d617bca01?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzODgwMzZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NzA1NjcyMTc&ixlib=rb-4.0.3&q=80";
   url: string = '';
 
-  constructor(private router: Router, private _activatedRoute: ActivatedRoute,private serviceData: ServiceService) {
+  constructor(private router: Router, private _activatedRoute: ActivatedRoute,private serviceData: ServiceService, private sharedService: ServiceService) {
    }
 
   async ngOnInit() {
@@ -136,6 +138,7 @@ export class HomePageComponent implements OnInit {
   goingToHistory(event: PredictionEvent) {
     if(event.getPrediction() == "Two Hands Pinching")
     {
+    this.sharedService.handTracker.stopDetection();
     this.router.navigate(['/history-page']);
     }
   }

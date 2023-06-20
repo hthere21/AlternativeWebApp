@@ -9,12 +9,14 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 nav {
-    background: blue;
+    background: white;
     height: 70px;
     width: 100%;
+    border-bottom: 2px solid gray;
+    border-radius: 15px;
 }
 label.logo{
-    color: white;
+    color: black;
     font-size: 35px;
     line-height: 80px;
     padding: 0px 100px;
@@ -30,7 +32,7 @@ nav ul li{
     margin: 0 5px;
 }
 nav ul li a{
-    color: white;
+    color: black;
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
@@ -45,7 +47,7 @@ a:hover{
 }
 .checkbtn{
   font-size: 30px;
-  color: white;
+  color: grey;
   float: right;
   line-height: 80px;
   margin-right: 40px;
@@ -98,10 +100,13 @@ a:hover{
 .cus-footer {
   margin-top: 2rem;
   width: 100% !important;
-  position: fixed;
+  position: fixed bottom;
   bottom: 0;
   width: 100%;
-  background-color: blue;
-  color: white;
+  background-color: white;
+  color: black;
   text-align: center;
+  border-top: 2px solid gray;
+  border-radius: 15px;
 }
+
