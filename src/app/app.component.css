@@ -13,13 +13,12 @@ body {
 }
 nav {
     background: white;
-    height: 70px;
+    height: 80px;
     width: 100%;
     border-bottom: 2px solid gray;
     border-radius: 15px;
 }
 label.logo{
-    color: black;
     font-size: 35px;
     line-height: 80px;
     padding-right: 100px;
@@ -29,6 +28,13 @@ label.logo{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.material-symbols-outlined {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px; 
+}
+
 nav ul{
     float: right;
     margin-right: 17px;
@@ -43,14 +49,14 @@ nav ul li a{
     font-size: 17px;
     padding: 7px 13px;
     border-radius: 3px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-align: center;
-    
 }
-a:hover{
-    background: #1b9bff;
-    transition: .5s;
-    
+a:hover {
+  background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 500ms;
 }
 .checkbtn{
   font-size: 30px;
@@ -64,13 +70,10 @@ a:hover{
 #check{
   display: none;
 }
-@media (max-width: 952px){
-  label.logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
   }
   label.logo{
     color: black;
@@ -82,18 +85,15 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
   ul{
+    border-radius: 15px;
+    margin-bottom: 2rem;
     position: absolute;
     opacity: 97%;
     width: 100%;
     height: 150vh;
-    background: #2c3e50;
-    top: 70px;
+    background: grey;
+    top: 80px;
     left: -100%;
     text-align: center;
     transition: all .5s;
@@ -104,11 +104,11 @@ a:hover{
     line-height: 30px;
   }
   nav ul li a{
+    color: white;
     font-size: 20px;
   }
   a:hover{
     background: none;
-    color: #0082e6;
   }
   #check:checked ~ ul{
     left: 0;
@@ -125,6 +125,6 @@ a:hover{
   color: black;
   text-align: center;
   border-top: 2px solid gray;
-  border-radius: 15px;
+  border-radius: 5px;
 }
 
