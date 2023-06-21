@@ -7,6 +7,9 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 nav {
     background: white;
@@ -19,8 +22,12 @@ label.logo{
     color: black;
     font-size: 35px;
     line-height: 80px;
-    padding: 0px 100px;
+    padding-right: 100px;
+    padding-left: 50px;
     font-weight: bold;
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 nav ul{
     float: right;
@@ -65,15 +72,26 @@ a:hover{
   nav ul li a{
     font-size: 16px;
   }
+  label.logo{
+    color: black;
+    font-size: 35px;
+    line-height: 80px;
+    padding-left: 20px;
+    font-weight: bold;
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d,#fcb045);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 }
 @media (max-width: 858px){
   .checkbtn{
     display: block;
   }
   ul{
-    position: fixed;
+    position: absolute;
+    opacity: 97%;
     width: 100%;
-    height: 100vh;
+    height: 150vh;
     background: #2c3e50;
     top: 70px;
     left: -100%;
@@ -100,7 +118,7 @@ a:hover{
 .cus-footer {
   margin-top: 2rem;
   width: 100% !important;
-  position: fixed bottom;
+  position: fixed;
   bottom: 0;
   width: 100%;
   background-color: white;
