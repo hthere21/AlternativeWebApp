@@ -31,8 +31,12 @@ img {
     display: grid;
     grid-template-columns: 30% 70%;
   }
+  .instruction1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 
-  .instruction {
+  .instruction2 {
     width: 100%;
     display: grid;
     grid-template-columns: 50% 50%;

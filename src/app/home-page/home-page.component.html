@@ -10,16 +10,14 @@
 </div>
 
 </div>
-<br>
-<div>
+<div class="instruction1">
 <h2 style="text-align: center;" *ngIf="!ratingCheck">Use your hand to rate these random photos</h2>
 <h3 style="text-align: center;" *ngIf="ratingCheck">You just rate this photo {{rating}} star. Press submit button to confirm</h3>
 <div style="margin-top: 5px; text-align: center;" *ngIf="ratingCheck">
 <button (click)="onSubmit()">Submit</button>
 </div>
 </div>
-<br>
-<div class="instruction">
+<div class="instruction2">
 <div class="div2" style="text-align: center;">
     <h2>Rating gesture</h2>
     <p style="align-items: center;">Closed and Pinching Hands (<span class="material-symbols-outlined" style="font-size: 1em;">star</span>)</p>
