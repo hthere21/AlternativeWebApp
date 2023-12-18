@@ -1,6 +1,6 @@
 # AlternateWebApp Interaction Project
 
-[![My Skills](https://skillicons.dev/icons?i=angular)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=angular,bootstrap,ts,postman,js,html,css)](https://skillicons.dev)
 
 ## Project Overview
 Welcome to Alternate Interaction December 2022, an innovative and immersive web experience that redefines the process of rating random photos. Our responsive website seamlessly integrates hand gestures, allowing users to express their preferences effortlessly through their laptop cameras. By harnessing the power of the Hantrack.js library, we've crafted an interactive environment where image interaction becomes not just a task but an engaging and intuitive journey.
