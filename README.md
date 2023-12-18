@@ -1,6 +1,8 @@
 # AlternateWebApp Interaction Project
 
-![image](https://github.com/hthere21/AlternativeWebApp/assets/114700489/a8f0cb88-0646-435a-acc8-fc3bacf1047a)
+https://user-images.githubusercontent.com/25181517/183890595-779a7e64-3f43-4634-bad2-eceef4e80268.png
+https://user-images.githubusercontent.com/25181517/183898054-b3d693d4-dafb-4808-a509-bab54cf5de34.png
+https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png
 
 ## Project Overview
 Welcome to Alternate Interaction December 2022, an innovative and immersive web experience that redefines the process of rating random photos. Our responsive website seamlessly integrates hand gestures, allowing users to express their preferences effortlessly through their laptop cameras. By harnessing the power of the Hantrack.js library, we've crafted an interactive environment where image interaction becomes not just a task but an engaging and intuitive journey.
