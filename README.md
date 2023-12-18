@@ -1,7 +1,7 @@
-# Alternate Interaction December 2022 Readme
+# AlternateWebApp Interaction December 2022
 
 ## Project Overview
-Welcome to Alternate Interaction December 2022, a responsive website that transforms the act of rating random photos into an interactive experience using hand gestures. Leveraging the Hantrack.js library, users can effortlessly express their preferences through laptop cameras, making image interaction intuitive and engaging.
+Welcome to Alternate Interaction December 2022, an innovative and immersive web experience that redefines the process of rating random photos. Our responsive website seamlessly integrates hand gestures, allowing users to express their preferences effortlessly through their laptop cameras. By harnessing the power of the Hantrack.js library, we've crafted an interactive environment where image interaction becomes not just a task but an engaging and intuitive journey.
 
 ## Key Features
 
