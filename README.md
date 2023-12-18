@@ -1,4 +1,4 @@
-# AlternateWebApp Interaction December 2022
+# AlternateWebApp Interaction Project
 
 ## Project Overview
 Welcome to Alternate Interaction December 2022, an innovative and immersive web experience that redefines the process of rating random photos. Our responsive website seamlessly integrates hand gestures, allowing users to express their preferences effortlessly through their laptop cameras. By harnessing the power of the Hantrack.js library, we've crafted an interactive environment where image interaction becomes not just a task but an engaging and intuitive journey.
@@ -58,7 +58,7 @@ Integration with Unsplash's REST APIs provides a diverse collection of random, h
 - Link: https://www.youtube.com/watch?v=5fVAZfXnORM
 
 ## Contributors
-- Hai Nguyen
+- [Hai Nguyen](https://haiwebsite.netlify.app/)
 
 ## Feedback and Support
 We value your feedback! If you encounter issues or have suggestions, reach out to us at dhai2152001@gmail.com.
