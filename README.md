@@ -22,22 +22,37 @@ Integration with Unsplash's REST APIs provides a diverse collection of random, h
 4. **Intuitive Rating:** Express preferences through hand gestures to rate displayed images.
 
 ## Getting Started
+
 ### 1. Clone the Project
-git clone https://github.com/hthere21/AlternativeWebApp.git
+- git clone https://github.com/hthere21/AlternativeWebApp.git
+
 ### 2. Navigate to the Project Directory
-cd [project-directory]
+- cd [project-directory]
+
 ### 3. Install Angular
 - Make sure you have Angular installed. If not, install it globally.
 - npm install -g @angular/cli
-4. Install Dependencies
-npm install
-5. Run the Application
 
+### 4. Install Dependencies
+- npm install
+
+### 5. Run the Application
+- ng serve
+
+### 6. Access the Website
+- Open your web browser and go to http://localhost:4200/
+
+### 7. Grant Camera Permissions
+- Ensure your device has a functional camera and grant necessary permissions when prompted.
+
+### 8. Start Interacting
+- Explore the website and rate images by using hand gestures. Swipe, pinch, or wave to express your preferences.
+- No additional downloads or installations are required. Enjoy the interactive experience!
 
 ## Technologies Used
 - Hantrack.js Library
 - REST APIs from Unsplash
-- HTML, CSS, JavaScript
+- HTML, CSS, JavaScript, Angular.js and localStorange
 
 ## Contributors
 - Hai Nguyen
